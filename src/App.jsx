@@ -1,4 +1,5 @@
-import { useState } from 'react'
+import { useState,react } from 'react'
+import Login from './components/Auth/Login'
 
 
 function App() {
@@ -6,9 +7,9 @@ function App() {
 
   return (
     <>
-      <h1>this is my project</h1>
+      <Login />
     </>
   )
 }
 
-export default App
+export default App;
