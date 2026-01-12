@@ -1,6 +1,9 @@
-import React from "react";
+import React, { useState } from "react";
 
 const Login = () => {
+
+   const [email , setEmail] = useState('')
+   const [password , setPassword] = useState('')
 
     const submitHandler = (e) => {
         e.preventDefault()
@@ -10,7 +13,7 @@ const Login = () => {
 
     return (
      <div className="flex h-screen w-screen items-center justify-center">
-      <div className="border-2 rounded-xl border-red-600 p-20 border-emerald-600 ">
+      <div className="border-2 rounded-xl p-20 border-emerald-600 ">
          <form onSubmit={(e) => {
             submitHandler(e)
          }} className="flex flex-col items-center justify-center">
