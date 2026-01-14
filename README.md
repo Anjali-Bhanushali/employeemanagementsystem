@@ -9,3 +9,4 @@ value{password}
 onchange{}
 onSubmit{}
 what is mean by h-screen
+context-API me data centralised kr dete hai 
