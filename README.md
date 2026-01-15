@@ -17,4 +17,6 @@ this is my data
 do one thing, give each employee with task array with 3-10 task with properties like active(true or false),new task (true or false), completed true or false,failed (true or false),and task title,task description , task date,task category
 
 useEffect side stack me ek function ko run krta hai 
+
+child ke through parent me function pass kr diya hai 
 ```
