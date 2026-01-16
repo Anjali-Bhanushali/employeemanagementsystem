@@ -25,7 +25,7 @@ function App() {
   
 
   const handleLogin = ( email,password) => {
-      if(email== 'admin@me.com' && password == '123'){
+      if(email== 'admin@example.com' && password == '123'){
          setUser('admin')
         //  console.log(" admin")
         localStorage.setItem('loggedInUser',JSON.stringify({role:'admin'}))
