@@ -9,15 +9,15 @@ const TaskListNumbers = ({data}) =>{
         </div>
         <div className="rounded-xl py-6 px-9 w-[45%] p-10 bg-emerald-900">
            <h2 className="text-3xl font-semibold">{data?.taskCount?.active}</h2>
-           <h3 className="text-xl font-medium">Active</h3>
+           <h3 className="text-xl font-medium">Active Task</h3>
         </div>
         <div className="rounded-xl py-6 px-9 w-[45%] p-10 bg-emerald-900">
            <h2 className="text-3xl font-semibold">{data?.taskCount?.completed}</h2>
-           <h3 className="text-xl font-medium">Completed</h3>
+           <h3 className="text-xl font-medium">Completed Task</h3>
         </div>
         <div className="rounded-xl py-6 px-9 w-[45%] p-10 bg-emerald-900">
            <h2 className="text-3xl font-semibold">{data?.taskCount?.failed}</h2>
-           <h3 className="text-xl font-medium">Failed</h3>
+           <h3 className="text-xl font-medium">Failed Task</h3>
         </div>
        </div>
     )

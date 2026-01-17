@@ -19,4 +19,7 @@ do one thing, give each employee with task array with 3-10 task with properties 
 useEffect side stack me ek function ko run krta hai 
 
 child ke through parent me function pass kr diya hai 
+
+data.tasks.map React me array ko loop karne ke liye hota hai 👇
+Simple words me: har task par ek-ek karke kaam karega.
 ```
