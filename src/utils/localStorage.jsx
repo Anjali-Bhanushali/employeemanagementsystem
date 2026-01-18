@@ -97,6 +97,7 @@ const employees = [
       { newTask: true, title: "Theme Picker", description: "Add theme selection", date: "2026-01-19", category: "UI/UX" },
       { completed: true, title: "Refactor Code", description: "Improve code readability", date: "2026-01-12", category: "Refactor" },
       { completed: true, title: "Optimize Logic", description: "Optimize backend logic", date: "2026-01-13", category: "Optimization" },
+      { completed: true, title: "Optimize Logic", description: "Optimize backend logic", date: "2026-01-13", category: "Optimization" },
       { failed: true, title: "Unit Testing", description: "Write unit tests", date: "2026-01-08", category: "Testing" },
       { failed: true, title: "Fix Bugs", description: "Resolve minor bugs", date: "2026-01-09", category: "Frontend" },
       { failed: true, title: "API Error Handling", description: "Handle API errors", date: "2026-01-10", category: "Backend" },
