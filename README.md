@@ -45,4 +45,6 @@ function App() {
   );
 }
 
+Learn Hoisting:
+
 ```
