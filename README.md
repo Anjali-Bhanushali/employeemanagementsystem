@@ -22,4 +22,27 @@ child ke through parent me function pass kr diya hai
 
 data.tasks.map React me array ko loop karne ke liye hota hai 👇
 Simple words me: har task par ek-ek karke kaam karega.
+
+It's all about localstorage and context api 
+
+Two way binding:-
+Two-way binding connects data (state) and view (UI) so changes in one are instantly reflected in the other.
+Like this:
+
+import { useState } from "react";
+
+function App() {
+  const [name, setName] = useState("");
+
+  return (
+    <>
+      <input
+        value={name}
+        onChange={(e) => setName(e.target.value)}
+      />
+      <p>Hello {name}</p>
+    </>
+  );
+}
+
 ```
