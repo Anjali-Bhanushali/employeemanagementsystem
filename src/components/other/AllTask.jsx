@@ -4,7 +4,7 @@ import { AuthContext } from "../../context/AuthProvider";
 
 const AllTask = () => {
 
-    const authData = useContext(AuthContext)
+    const [userData,setUserData] = useContext(AuthContext)
      
 
     return(
@@ -19,9 +19,9 @@ const AllTask = () => {
                 <h5 className=" text-lg font-medium w-1/5 h-10 text-center   ">Failed</h5>
             </div> 
             <div >
-             {authData?.employees?.map((employees)=>{
-                 return <div className="border-2 border-emerald-500 bg-black mb-2 py-2 px-4 flex justify-between rounded">
-                     <h2 className="text-lg font-medium w-1/5 h-8 text-center ">{employees.name}</h2>
+             {userData?.employees?.map((employees )=>{
+                 return <div key={employees.id}  className="border-2 border-emerald-500 bg-black mb-2 py-2 px-4 flex justify-between rounded">
+                     <h2  className="text-lg font-medium w-1/5 h-8 text-center ">{employees.name}</h2>
                      <h3 className="text-lg font-medium w-1/5 h-8 text-center ">  {employees.taskCount.newTask}</h3>
                      <h5 className="text-lg font-medium w-1/5 h-8 text-center ">{employees.taskCount.completed}</h5>
                      <h5 className="text-lg font-medium w-1/5 h-8 text-center ">{employees.taskCount.active}</h5>
