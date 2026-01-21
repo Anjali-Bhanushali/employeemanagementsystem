@@ -19,7 +19,7 @@ const AllTask = () => {
                 <h5 className=" text-lg font-medium w-1/5 h-10 text-center   ">Failed</h5>
             </div> 
             <div >
-             {userData?.employees?.map((employees )=>{
+             {userData?.map((employees )=>{
                  return <div key={employees.id}  className="border-2 border-emerald-500 bg-black mb-2 py-2 px-4 flex justify-between rounded">
                      <h2  className="text-lg font-medium w-1/5 h-8 text-center ">{employees.name}</h2>
                      <h3 className="text-lg font-medium w-1/5 h-8 text-center ">  {employees.taskCount.newTask}</h3>

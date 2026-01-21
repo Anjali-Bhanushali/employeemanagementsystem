@@ -10,7 +10,7 @@ const AuthProvider = ({children}) => {
    useEffect (() => {
     setLocalStorage()
     const {employees} = getLocalStorage()
-    setUserData({employees})
+    setUserData(employees)
    },[])
     return (
       <div className="text-white">

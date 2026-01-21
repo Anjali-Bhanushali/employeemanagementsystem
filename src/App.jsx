@@ -33,19 +33,20 @@ function App() {
          setUser('admin')
         //  console.log(" admin")
         localStorage.setItem('loggedInUser',JSON.stringify({role:'admin', data:null}))
+        return;
       }
-      else if(userData?.employees){
-        const employee = userData.employees.find((e) => email == e.email && password == e.password )
-        if(employee){
-          setUser('employee')
-        // console.log(" user")
+      
+      const employee = userData?.employees?.find((e) => email == e.email && password == e.password )
+      if(employee){
+        setUser('employee')
+      // console.log(" user")
         setLoggedInUserData(employee)
         localStorage.setItem('loggedInUser',JSON.stringify({role:'employee', data:employee}))
-        }
+        return;
       }
-      else{
-        alert("Invalid User")
-      }
+      
+       alert("Invalid User");
+      
   }
 
   

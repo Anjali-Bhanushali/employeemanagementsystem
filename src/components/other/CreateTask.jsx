@@ -12,23 +12,34 @@ const [taskAssignTo, setAssignTo] = useState("");
 const [taskCategory, setCategory] = useState("");
 const [taskDescription, setDescription] = useState("");
 
-const [newTasks,setNewTask] = useState({});
 
 const submitHandler = (e) =>{
     e.preventDefault()
-    setNewTask({taskTitle,taskAssignTo, taskDate,taskCategory,taskDescription,active:false,newTask:true,failed:false,completed:false})
-    
-    const data =   userData.employees
-    console.log(data)
 
-    data.forEach(function(elem){
+    const taskObj = {
+    taskTitle,
+    taskAssignTo,
+    taskDate,
+    taskCategory,
+    taskDescription,
+    active: false,
+    newTask: true,
+    failed: false,
+    completed: false,
+  };
+    
+    
+
+    userData.forEach(function(elem){
        if(taskAssignTo == elem.name){
-        elem.tasks.push(newTasks)
-        elem.taskCount.newTask +=1
+        elem.tasks.push(taskObj)
+        elem.taskCount.newTask =  (elem.taskCount.newTask) + 1
        }
     })
 
+   
     
+    console.log(userData)
 
     setTitle("")
     setCategory("")
