@@ -108,7 +108,7 @@ const submitHandler = (e) =>{
                             onChange={(e)=>{
                               setDescription(e.target.value)
                            }}  className="text-sm py-1 px-2  rounded outline-none bg-transparent border-[1px] border-gray-400 mb-4 w-full" name="" id="" cols={30} rows={10}></textarea>
-                        <button type="submit" className="bg-emerald-500 py-3 hover:bg-emerald-600 px-5 rounded text-sm mt-4 w-full ">Create Task</button>
+                        <button className="bg-emerald-500 py-3 hover:bg-emerald-600 px-5 rounded text-sm mt-4 w-full ">Create Task</button>
                     </div> 
                 </form>
             </div>
