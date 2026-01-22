@@ -13,33 +13,51 @@ const [taskCategory, setCategory] = useState("");
 const [taskDescription, setDescription] = useState("");
 
 
+
 const submitHandler = (e) =>{
     e.preventDefault()
 
-    const taskObj = {
-    taskTitle,
-    taskAssignTo,
-    taskDate,
-    taskCategory,
-    taskDescription,
+    
+  const taskObj = {
+   title: taskTitle,
+   assignTo: taskAssignTo,
+    date:taskDate,
+    category:taskCategory,
+   description: taskDescription,
     active: false,
     newTask: true,
     failed: false,
     completed: false,
   };
     
-    
+   //  const data = userData
 
-    userData.forEach(function(elem){
-       if(taskAssignTo == elem.name){
-        elem.tasks.push(taskObj)
-        elem.taskCount.newTask =  (elem.taskCount.newTask) + 1
-       }
-    })
+   //  userData.forEach(function(elem){
+   //     if(taskAssignTo == elem.name){
+   //      elem.tasks.push(taskObj)
+   //      elem.taskCount.newTask =  (elem.taskCount.newTask) + 1
+   //     }
+   //  })
 
    
-    
-    console.log(userData)
+   //  setUserData(updateduserData)
+
+   const updatedUserData = userData.map((user) => {
+    if (user.name === taskAssignTo) {
+      return {
+        ...user,
+        tasks: [...user.tasks, taskObj],
+        taskCount: {
+          ...user.taskCount,
+          newTask: user.taskCount.newTask + 1,
+        },
+      };
+    }
+    return user;
+  });
+
+  setUserData(updatedUserData);
+    console.log(updatedUserData);
 
     setTitle("")
     setCategory("")

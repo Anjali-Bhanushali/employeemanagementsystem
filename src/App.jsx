@@ -36,7 +36,7 @@ function App() {
         return;
       }
       
-      const employee = userData?.employees?.find((e) => email == e.email && password == e.password )
+      const employee = userData?.find((e) => email == e.email && password == e.password )
       if(employee){
         setUser('employee')
       // console.log(" user")
