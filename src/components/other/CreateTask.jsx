@@ -56,7 +56,7 @@ const submitHandler = (e) =>{
     return user;
   });
 
-  setUserData(updatedUserData);
+    setUserData(updatedUserData);
     console.log(updatedUserData);
 
     setTitle("")
